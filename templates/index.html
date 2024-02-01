@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper</title>
+</head>
+<body>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <form action="{{ url_for("home")}}" method="post">
+        <label for="lastname">Search :</label>
+        <input type="text" id="SearchName" name="name" placeholder="Search">
+        <button type="submit">Search</button>
+        
+</body>
+</html>

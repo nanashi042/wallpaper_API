@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Links</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <!-- <h1>Image Links</h1> -->
+    <nav>
+        <div class="container">
+            <ul class="incon">
+                <li id="home"><a href="/">Home</a></li>
+            </ul>
+
+        </div>
+    </nav>
+  
+    <ul class="box">
+        {% for link in links %}
+        <a href="{{link}}" download>
+            <img src="{{link}}" alt="" class="img">
+        </a>
+        {% endfor %}
+    </ul>
+</body>
+</html>
